@@ -17,13 +17,13 @@
  Приветствую тебя, Юзер. Перед началом работы присоеденись к базе данных<br>
  Либо нажми на кнопку 'help', чтобы узнать значение всех кнопок<br>
 <form action="connection" method="post">
-    Логин:
+    Логин: postgres
     <input type = "text" name="login" size="40">
     <br>
-    Пароль:
+    Пароль: root
     <input type="password" name="password" size="40">
     <br>
-    Имя БД:
+    Имя БД: test
     <input type="text" name="dbName" size="40">
     <br>
     <input type="submit" value="Присоедениться">
