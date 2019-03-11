@@ -13,6 +13,7 @@ import java.sql.Connection;
 
 public class ConnectionServlet extends HttpServlet {
     private DbConnector model;
+    private Connection connection;
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -21,10 +22,12 @@ public class ConnectionServlet extends HttpServlet {
         String login = req.getParameter("login");
         String dbName = req.getParameter("dbName");
         try {
-            Connection connection = model.connect(login,password,dbName);
+            connection = model.connect(login,password,dbName);
 
         } catch (ConnectionFailException e) {
             e.printStackTrace();
         }
     }
+
+
 }
