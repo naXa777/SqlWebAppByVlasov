@@ -16,8 +16,20 @@
 <br>
  Приветствую тебя, Юзер. Перед началом работы присоеденись к базе данных<br>
  Либо нажми на кнопку 'help', чтобы узнать значение всех кнопок<br>
-<form action="/connect" method="get">
-    <button>connect</button>
+<form action="connection" method="post">
+    Логин:
+    <input type = "text" name="login" size="40">
+    <br>
+    Пароль:
+    <input type="password" name="password" size="40">
+    <br>
+    Имя БД:
+    <input type="text" name="dbName" size="40">
+    <br>
+    <input type="submit" value="Присоедениться">
+</form>
+<form action="help.jsp" method="get">
+    <button>help</button>
 </form>
 </body>
 </html>

@@ -12,4 +12,12 @@
         <servlet-name>MainServlet</servlet-name>
         <url-pattern>/sqlwebapp</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ConnectionServlet</servlet-name>
+        <servlet-class>ua.com.jujaWebApp.controller.ConnectionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConnectionServlet</servlet-name>
+        <url-pattern>/connection</url-pattern>
+    </servlet-mapping>
 </web-app>

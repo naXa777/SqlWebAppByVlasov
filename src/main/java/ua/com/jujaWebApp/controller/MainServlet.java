@@ -10,6 +10,6 @@ public class MainServlet extends HttpServlet {
     private static final String STARTPAGE = "index.jsp";
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.sendRedirect(STARTPAGE);
+        req.getRequestDispatcher(STARTPAGE).forward(req,resp);
     }
 }
