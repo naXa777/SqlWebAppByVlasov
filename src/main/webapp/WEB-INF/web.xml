@@ -20,4 +20,16 @@
         <servlet-name>ConnectionServlet</servlet-name>
         <url-pattern>/connection</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>WorkWithDbServlet</servlet-name>
+        <servlet-class>ua.com.jujaWebApp.controller.WorkWithDbServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WorkWithDbServlet</servlet-name>
+        <url-pattern>/workwithdb</url-pattern>
+    </servlet-mapping>
+    <context-param>
+        <param-name>dbprop</param-name>
+        <param-value>DB.properties</param-value>
+    </context-param>
 </web-app>
