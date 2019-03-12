@@ -22,7 +22,7 @@ public class ConnectionPool {
 
     static {
         properties= new Properties();
-        try (FileInputStream fis = new FileInputStream("src\\main\\resources\\DB.properties")) {
+        try (FileInputStream fis = new FileInputStream("src\\main\\webapp\\WEB-INF\\props\\DB.properties")) {
             properties.load(fis);
         } catch (FileNotFoundException e) {
             System.err.println("ОШИБКА!!! Файл настроек не найден");

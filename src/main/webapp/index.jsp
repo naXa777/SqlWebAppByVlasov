@@ -16,7 +16,7 @@
 <br>
  Приветствую тебя, Юзер. Перед началом работы присоеденись к базе данных<br>
  Либо нажми на кнопку 'help', чтобы узнать значение всех кнопок<br>
-<form action="connection" method="post">
+<form action="connection" method="get">
     Логин: postgres
     <input type = "text" name="login" size="40">
     <br>
