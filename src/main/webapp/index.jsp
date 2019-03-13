@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<html lang="ru">
 <head>
     <title>SqlWebAppByVlasov</title>
 </head>
@@ -14,7 +14,7 @@
 <br>
 <br>
 <br>
- Приветствую тебя, Юзер. Перед началом работы присоеденись к базе данных<br>
+ Приветствую тебя, Юзер. Перед началом работы присоединись к базе данных<br>
  Либо нажми на кнопку 'help', чтобы узнать значение всех кнопок<br>
 <form action="connection" method="post">
     Логин: postgres<!--написал правильные данные для сравнения в качестве подсказки -->
